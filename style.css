@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background:
+    radial-gradient(circle at top left, rgba(255, 0, 85, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(0, 153, 255, 0.16), transparent 25%),
+    linear-gradient(135deg, #0a0f1f, #10192f, #09111f);
+  color: #f5f7ff;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header,
+.sub-header {
+  padding: 3% 0 2% 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-image: url("images/cNOUXJ.webp"); 
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.top-banner {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main-title,
+.sub-header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 174, 255, 0.35);
+}
+
+.subtitle {
+  color: #c7d5ff;
+  margin-bottom: 1.2rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.main-nav a:active,
+.main-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 153, 255, 0.2);
+  box-shadow: 0 0 18px rgba(0, 153, 255, 0.2);
+}
+
+.hero {
+  padding: 4% 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text,
+.hero-image-card,
+.content-box,
+.quiz-box,
+.team-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text,
+.content-box,
+.quiz-box {
+  padding: 2rem;
+}
+
+.hero-text h2,
+.section-heading h2,
+.content-box h2,
+.quiz-box h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.hero-text p,
+.content-box p,
+.section-heading p,
+.team-info p {
+  color: #dce5ff;
+  margin-bottom: 1rem;
+}
+
+.hero-image-card {
+  overflow: hidden;
+}
+
+.hero-image-card img,
+.image-card img,
+.team-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image-card img {
+  height: 100%;
+  min-height: 320px;
+}
+
+.section-heading {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.slider-btn {
+  background: linear-gradient(135deg, #ff003c, #0066ff);
+  color: #fff;
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 0, 60, 0.35);
+}
+
+.team-card {
+  width: 75%;
+  max-width: 850px;
+  overflow: hidden;
+}
+
+.team-card img {
+  height: 340px;
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-content {
+  padding: 4% 0;
+}
+
+.image-grid {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.image-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.image-card img {
+  height: 280px;
+}
+
+.image-card figcaption {
+  padding: 1rem;
+  color: #dce5ff;
+}
+
+.quiz-box {
+  margin-top: 2rem;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.question p {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #dce5ff;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #ff003c, #005eff);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0, 94, 255, 0.3);
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
+  .team-card img {
+    height: 260px;
+  }
+
+  .main-title,
+  .sub-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-text h2,
+  .section-heading h2,
+  .content-box h2,
+  .quiz-box h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column;
+  }
+
+  .slider-wrapper {
+    flex-direction: column;
+  }
+
+  .slider-btn {
+    width: 50px;
+    height: 50px;
+  }
+}

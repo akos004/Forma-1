@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma 1 világa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="main-title">Forma 1 világa</h1>
+      <p class="subtitle">Történelem, csapatok és a Red Bull Racing bemutatása</p>
+
+      <nav class="main-nav" aria-label="Fő navigáció">
+        <a href="index.html">Főoldal</a>
+        <a href="redbull.html">Red Bull csapat</a>
+        <a href="auto.html">Red Bull autó</a>
+        <a href="ujdonsag.html">Újdonságok</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>A Formula 1 története röviden</h2>
+          <p>
+            A Formula 1 a világ legismertebb autóverseny-sorozata, amely 1950-ben indult.
+            Az évtizedek során a technológia, a biztonság, az aerodinamika és a motorsport
+            kultúrája óriási fejlődésen ment keresztül. A sport egyszerre szól a sebességről,
+            a mérnöki innovációról, a stratégiáról és a pilóták rendkívüli teljesítményéről.
+          </p>
+          <p>
+            A Formula 1-ben minden csapat saját autót fejleszt, miközben a szabályok
+            meghatározzák a technikai kereteket. A versenyhétvégék szabadedzésekből,
+            időmérőből és futamból állnak, ahol a pilóták és a konstruktőrök is pontokat
+            gyűjtenek a világbajnokságban.
+          </p>
+        </div>
+
+        <div class="hero-image-card">
+          <img
+            src="images/rajtracs.jpg"
+            alt="Formula 1-es versenyautók egy rajtrácson"
+            title="Formula 1-es versenyautók a pályán"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-heading">
+        <h2>Csapatok és autóik</h2>
+        <p>
+          Az alábbi kártyák között a nyilakkal lehet lapozni. Minden csapatról rövid információ
+          jelenik meg az istállóról és az autójáról.
+        </p>
+      </div>
+
+      <div class="slider-wrapper">
+        <button class="slider-btn" id="prevBtn" aria-label="Előző csapat">&#10094;</button>
+
+        <article class="team-card" id="teamCard">
+          <img id="teamImage" src="" alt="" title="">
+          <div class="team-info">
+            <h3 id="teamName"></h3>
+            <p id="teamDesc"></p>
+            <p id="carDesc"></p>
+          </div>
+        </article>
+
+        <button class="slider-btn" id="nextBtn" aria-label="Következő csapat">&#10095;</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Készítette:</strong> Klopfer Áron,Gulyás Botond,Lukács Ákos</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
