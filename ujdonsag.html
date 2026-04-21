@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma 1 világa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="sub-header">
+    <div class="container">
+      <h1>Újdonságok és fejlesztések</h1>
+      <nav class="main-nav" aria-label="Fő navigáció">
+        <a href="index.html">Főoldal</a>
+        <a href="redbull.html">Red Bull csapat</a>
+        <a href="auto.html">Red Bull autó</a>
+        <a href="ujdonsag.html">Újdonságok</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="content-box">
+      <h2>Fejlesztési irányok a Formula 1-ben</h2>
+      <p>
+        A Formula 1 világában folyamatosan jelennek meg új technikai megoldások.
+        Ide tartozik az aerodinamikai elemek finomhangolása, a könnyebb anyagok használata,
+        az energia-visszanyerő rendszerek fejlesztése és az adatelemzés egyre nagyobb szerepe.
+      </p>
+      <p>
+        A Red Bull különösen ismert arról, hogy kreatív mérnöki megoldásokat alkalmaz.
+        A sikerhez nemcsak a nyers tempó, hanem a fejlesztések gyors pályára vitele,
+        a stratégiai döntések és az autó egyensúlya is hozzájárul.
+      </p>
+    </section>
+
+    <section class="image-grid">
+      <figure class="image-card">
+        <img
+          src="images/redbull ujdonsag1.jpg"
+          alt="Modern sportautó világítással, fejlett technológiai hangulattal"
+          title="Technológiai fejlődés az autóiparban"
+        >
+        <figcaption>Modern fejlesztések és innováció</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img
+          src="images/redbull ujdonsag2.jpg"
+          alt="Autós részletek közeli felvételen, technikai hangsúllyal"
+          title="Precíz mérnöki megoldások"
+        >
+        <figcaption>Mérnöki precizitás és adatelemzés</figcaption>
+      </figure>
+    </section>
+
+    <section class="quiz-box">
+      <h2>Tudáspróba</h2>
+      <form id="quiz3">
+        <div class="question">
+          <p>1. Mi jellemző a Formula 1-re?</p>
+          <label><input type="radio" name="q1" value="a"> Nincs fejlesztés</label>
+          <label><input type="radio" name="q1" value="b"> Folyamatos technikai fejlődés</label>
+          <label><input type="radio" name="q1" value="c"> Csak a pilóta számít</label>
+        </div>
+
+        <div class="question">
+          <p>2. Melyik terület fontos az újításoknál?</p>
+          <label><input type="radio" name="q2" value="a"> Aerodinamika</label>
+          <label><input type="radio" name="q2" value="b"> Ablakmosó tartály</label>
+          <label><input type="radio" name="q2" value="c"> Dísztárcsa</label>
+        </div>
+
+        <div class="question">
+          <p>3. Mi segíti még a csapatok munkáját?</p>
+          <label><input type="radio" name="q3" value="a"> Adatelemzés</label>
+          <label><input type="radio" name="q3" value="b"> Kézi iránytű</label>
+          <label><input type="radio" name="q3" value="c"> Papírsárkány</label>
+        </div>
+
+        <div class="question">
+          <p>4. Mi kell a sikerhez?</p>
+          <label><input type="radio" name="q4" value="a"> Csak szerencse</label>
+          <label><input type="radio" name="q4" value="b"> Fejlesztés, stratégia és egyensúly</label>
+          <label><input type="radio" name="q4" value="c"> Csak a festés</label>
+        </div>
+
+        <button type="button" class="primary-btn" id="quiz3Btn">Kiértékelés</button>
+        <p id="result3" class="result"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Készítette:</strong> Klopfer Áron,Gulyás Botond,Lukács Ákos</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
