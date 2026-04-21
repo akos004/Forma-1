@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma 1 világa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="sub-header">
+    <div class="container">
+      <h1>A Red Bull autója</h1>
+      <nav class="main-nav" aria-label="Fő navigáció">
+        <a href="index.html">Főoldal</a>
+        <a href="redbull.html">Red Bull csapat</a>
+        <a href="auto.html">Red Bull autó</a>
+        <a href="ujdonsag.html">Újdonságok</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="content-box">
+      <h2>Az autó jellemzői</h2>
+      <p>
+        A Red Bull versenyautói híresek a kiváló aerodinamikájukról, stabil kanyarvételükről
+        és nagy leszorítóerejükről. Az autó tervezésében a sebesség mellett a hatékonyság is
+        kiemelt szerepet kap.
+      </p>
+      <p>
+        A Formula 1-es autók rendkívül összetett gépek: fontos a motor, a padlólemez,
+        a szárnyak, a gumik kezelése és az energia-visszanyerő rendszerek működése is.
+        A Red Bull autói ezekben a területekben gyakran kiemelkedően teljesítenek.
+      </p>
+    </section>
+
+    <section class="image-grid">
+      <figure class="image-card">
+        <img
+          src="images/reddbull auto1.jpg"
+          alt="Sportautó oldalnézetből, áramvonalas formákkal"
+          title="Áramvonalas kialakítás és aerodinamika"
+        >
+        <figcaption>Áramvonalas kialakítás</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img
+          src="images/redbull auto2.avif"
+          alt="Autó eleje közeli nézetben, sportos és agresszív kialakítással"
+          title="Versenyautós részletek és technológia"
+        >
+        <figcaption>Technikai részletek és precizitás</figcaption>
+      </figure>
+    </section>
+
+    <section class="quiz-box">
+      <h2>Tudáspróba</h2>
+      <form id="quiz2">
+        <div class="question">
+          <p>1. Miről híres a Red Bull autója?</p>
+          <label><input type="radio" name="q1" value="a"> Gyenge kanyarodás</label>
+          <label><input type="radio" name="q1" value="b"> Jó aerodinamika</label>
+          <label><input type="radio" name="q1" value="c"> Nincs szárnya</label>
+        </div>
+
+        <div class="question">
+          <p>2. Mi segíti a kanyarvételt?</p>
+          <label><input type="radio" name="q2" value="a"> Leszorítóerő</label>
+          <label><input type="radio" name="q2" value="b"> Ablaktörlő</label>
+          <label><input type="radio" name="q2" value="c"> Tetőcsomagtartó</label>
+        </div>
+
+        <div class="question">
+          <p>3. Melyik fontos része az F1-es autónak?</p>
+          <label><input type="radio" name="q3" value="a"> Padlólemez</label>
+          <label><input type="radio" name="q3" value="b"> Vonóhorog</label>
+          <label><input type="radio" name="q3" value="c"> Hólánc</label>
+        </div>
+
+        <div class="question">
+          <p>4. Mi fontos még a teljesítményhez?</p>
+          <label><input type="radio" name="q4" value="a"> Gumikezelés</label>
+          <label><input type="radio" name="q4" value="b"> Ülésfűtés</label>
+          <label><input type="radio" name="q4" value="c"> Rádióantenna színe</label>
+        </div>
+
+        <button type="button" class="primary-btn" id="quiz2Btn">Kiértékelés</button>
+        <p id="result2" class="result"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Készítette:</strong> Klopfer Áron,Gulyás Botond,Lukács Ákos</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
